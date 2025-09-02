@@ -1,0 +1,7 @@
+Model,Train_Accuracy,Test_Accuracy,Test_F1_Weighted,Test_F1_Macro,Test_Precision_Weighted,Test_Recall_Weighted,Training_Time(s),Prediction_Time(s),Overfitting_Score
+XGBoost,0.806,0.65,0.644,0.525,0.644,0.65,46.87,0.337,0.156
+Naive Bayes (Tuned),0.826,0.595,0.612,0.524,0.651,0.595,9.5,0.0,0.231
+Naive Bayes (Untuned),0.804,0.572,0.594,0.51,0.654,0.572,0.01,0.005,0.232
+Random Forest (Tuned),0.97,0.675,0.669,0.574,0.668,0.675,486.52,6.07,0.295
+Neural Network,0.956,0.646,0.647,0.554,0.647,0.646,569.26,0.032,0.31
+Logistic Regression (Tuned),0.955,0.627,0.633,0.545,0.641,0.627,1987.87,0.005,0.328
