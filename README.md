@@ -1,5 +1,5 @@
 # Sentiment Analysis of Tweets about Apple and Google Products
-![Sentiment Analysis](Images\Sentiment_Analysis_Projects.png)
+![Sentiment Analysis](https://github.com/rmasawa/A-Comparative-Analysis-of-Public-Sentiment-on-Twitter-towards-Apple-and-Google-Products-using-NLP/blob/master/Images/Sentiment_Analysis_Projects.png)
 
 ##  Authors
 
@@ -73,6 +73,27 @@ Conclusion: XGBoost was selected due to its balanced performance and robustness.
 
 [View XGBoost Model Results](https://github.com/rmasawa/A-Comparative-Analysis-of-Public-Sentiment-on-Twitter-towards-Apple-and-Google-Products-using-NLP/blob/master/Index.ipynb)
 
+
+## Recommendations  
+
+1. **Deploy XGBoost Model** – Achieved best generalization with competitive accuracy and minimal overfitting.  
+2. **Monitor Sentiment Trends Over Time** – Track daily/weekly results to detect spikes in negative sentiment.  
+3. **Implement Periodic Retraining** – Continuously update the model with new tweets to capture evolving slang, emojis, and trends.  
+4. **Expand Analysis** – Future work could explore deep learning models like **Word2Vec** or **BERT** for better context handling.  
+
+## Limitations  
+
+1. **Class Imbalance** – Negative tweets are underrepresented, leading to lower recall for that class.  
+2. **Short Texts** – Tweets average 6–11 words, limiting context for sentiment detection.  
+3. **Dynamic Language** – Social media slang and emoji usage evolve rapidly, reducing long-term generalization.  
+4. **Context Shifts** – Trained on historical data, the model may struggle with sudden changes in sentiment (e.g., product launches).  
+5. **Performance Ceiling** – Traditional ML models plateau around ~68% accuracy; future iterations should test transformer-based models.  
+
+## Visualizations  
+
+- [Tableau Dashboard 1](https://public.tableau.com/views/SentimentAnalysis_17568185002180/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
+- [Tableau Dashboard 2](https://public.tableau.com/app/profile/rose.miriti/viz/Phase_4_17567508830150/Dashboard1)  
+
 ### Deployed Model
 The trained XGBoost model is deployed using joblib and a Flask app (`deploy_sentiment_app.py`). Users can input a tweet and get the predicted sentiment (Positive / Negative / Neutral).
 
@@ -83,26 +104,3 @@ cd A-Comparative-Analysis-of-Public-Sentiment-on-Twitter-towards-Apple-and-Googl
 pip install -r requirements.txt
 python deploy_sentiment_app.py
 
-
-##  Recommendations  
-
-1. **Deploy XGBoost Model** – Achieved best generalization with competitive accuracy and minimal overfitting.  
-2. **Monitor Sentiment Trends Over Time** – Track daily/weekly results to detect spikes in negative sentiment.  
-3. **Implement Periodic Retraining** – Continuously update the model with new tweets to capture evolving slang, emojis, and trends.  
-4. **Expand Analysis** – Future work could explore deep learning models like **Word2Vec** or **BERT** for better context handling.  
-
-
-
-## Limitations  
-
-1. **Class Imbalance** – Negative tweets are underrepresented, leading to lower recall for that class.  
-2. **Short Texts** – Tweets average 6–11 words, limiting context for sentiment detection.  
-3. **Dynamic Language** – Social media slang and emoji usage evolve rapidly, reducing long-term generalization.  
-4. **Context Shifts** – Trained on historical data, the model may struggle with sudden changes in sentiment (e.g., product launches).  
-5. **Performance Ceiling** – Traditional ML models plateau around ~68% accuracy; future iterations should test transformer-based models.  
-
-
-## Visualizations  
-
-- [Tableau Dashboard 1](https://public.tableau.com/views/SentimentAnalysis_17568185002180/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
-- [Tableau Dashboard 2](https://public.tableau.com/app/profile/rose.miriti/viz/Phase_4_17567508830150/Dashboard1)  
