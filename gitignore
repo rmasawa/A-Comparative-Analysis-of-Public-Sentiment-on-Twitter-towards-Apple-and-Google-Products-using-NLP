@@ -1,0 +1,22 @@
+# Python virtual environment
+venv/
+.env/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+*.egg-info/
+.envrc
+.idea/
+.vscode/
+*.bak
+*.swp
+*.swo
+*.tmp
+*.~
+*.ppx
