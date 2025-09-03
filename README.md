@@ -60,14 +60,13 @@ Tested classifiers:
 Evaluation Metrics:
 - Accuracy
 - Precision, Recall, F1-score
-- Classification reports
+git add Index.ipynb README.md
 
 ### Why XGBoost Was Chosen
-- Best Accuracy & Generalization – 66.9% test accuracy, lowest overfitting gap (13.8%)
+- Good Accuracy & Generalization and the lowest overfitting gap 
 - Handles Class Imbalance – Negative tweets were underrepresented
 - Efficiency – Optimized, scalable, fast training
 - Interpretability – Provides feature importance
-- Industry-Proven – Widely adopted in NLP & Kaggle
 
 Conclusion: XGBoost was selected due to its balanced performance and robustness.
 
